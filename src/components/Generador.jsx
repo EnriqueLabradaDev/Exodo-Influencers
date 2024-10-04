@@ -1,4 +1,3 @@
-import {Users} from '../users.js'
 import { useState } from 'react'
 
 function Generador ({setUI, setUser, user}) {
