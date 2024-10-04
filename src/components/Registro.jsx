@@ -34,6 +34,7 @@ const [error, setError] = useState('')
             else {
                 setError('Acceso Denegado')
             }
+            return ''
         })
     }
 
