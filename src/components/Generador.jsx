@@ -7,6 +7,10 @@ function Generador ({setUI, setUser, user}) {
     const [copiado, setCopiado] = useState('')
 
     const generar = async () => {
+
+        document.getElementById('boton-generar').className = 'boton-generar-block'
+        document.getElementById('boton-copiar').className = 'boton-copiar'
+
         const codigo = crypto.randomUUID()
         setCode(user+codigo)
         
@@ -30,8 +34,6 @@ function Generador ({setUI, setUser, user}) {
             console.error(err)
         }
         )
-        document.getElementById('boton-generar').className = 'boton-generar-block'
-        document.getElementById('boton-copiar').className = 'boton-copiar'
     }
 
     const copiar = () => {
