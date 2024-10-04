@@ -1,38 +1,78 @@
 .App {
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.X {
+    width: 30%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Registro, .Generador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+    margin-top: 5%;
+    font-size: 24px;
+    border-radius: 10px;
+    border: #B3764E solid 2px;
+    padding: 10px;
+}
+
+.confirmar,.boton-generar , .boton-copiar {
+    margin-top: 5%;
+    border-radius: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 2%;
+    background-color: #B3764E;
+    color: white;
+    border: none;
+}
+
+.confirmar:hover, .boton-generar:hover , .boton-copiar:hover {
+    color: #B3764E;
+    background-color: white;
+    transition: all ease-in-out 0.3s;
+}
+
+.error {
+    color: red;
+    font-size: 20px;
+    border-bottom: 2px solid red;
+}
+
+.codigo-generado {
+    border-radius: 10px;
+    border: solid 2px #B3764E;
+    padding: 10px;
+}
+
+.boton-generar-block,.boton-copiar-block{
+    display: none;
+}
+
+
+.copiado {
+    color: rgb(33, 165, 26);
 }
