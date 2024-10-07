@@ -42,7 +42,7 @@ const [error, setError] = useState('')
         <div className='Registro'>
             <form>
                 <input id='usuario'   type='text' placeholder='Usuario' onChange={() => saveUser()}/>
-                <input id='contraseña' type='text' placeholder='Contraseña' onChange={() => savePassword()}/>
+                <input id='contraseña' type='password' placeholder='Contraseña' onChange={() => savePassword()}/>
             </form>
             <p className='error'>{error}</p>
             <button className='confirmar' onClick={autenticar}> Confirmar </button>
